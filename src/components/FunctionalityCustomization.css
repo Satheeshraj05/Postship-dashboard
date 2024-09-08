@@ -1,0 +1,67 @@
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 2px; 
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.custom-card-wrapper {
+    width: 100%; 
+}
+
+.custom-card-content {
+    display: flex;
+    flex-direction: column; /* Vertical layout for better readability */
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.space-y-4 {
+    gap: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-x-4 {
+    gap: 1rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: #0070f3;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}

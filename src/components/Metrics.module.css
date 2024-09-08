@@ -1,0 +1,66 @@
+.buttonWrapper {
+    display: flex;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+.buttonContainer {
+    flex: 0 1 auto; /* Adjust flex properties if needed */
+}
+
+.orderBox, .viewBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    color: white; /* Ensures text is readable on colored backgrounds */
+}
+
+.orderBox {
+    background-color: #e9e1b7; /* Green color for Orders */
+    padding: 30px;
+}
+
+.viewBox {
+    background-color: #c0ac53; /* Blue color for Tracking Page Views */
+    padding: 30px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    margin: 0;
+}
+
+.value {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.customLegend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between legend items */
+    margin-top: 10px; /* Space between pie chart and legend */
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legendColor {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.legendLabel {
+    font-size: 14px;
+}

@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { AppProvider, Frame, Page, Layout } from '@shopify/polaris';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Metrics from './components/Metrics';
+import Functionality from './components/Functionality';
+import '@shopify/polaris/build/esm/styles.css';
 
-function App() {
+const i18n = {
+  Polaris: {
+    ResourceList: {
+      showing: "Showing {itemsCount} {resource}",
+    },
+    Common: {
+      cancel: "Cancel",
+      reset: "Reset",
+      back: "Back",
+      save: "Save",
+    },
+  },
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider i18n={i18n}>
+      <Frame
+        topBar={<Navbar />}
+      >
+        <Page fullWidth>
+          <Layout>
+            <Layout.Section>
+              <Header />
+              <Metrics />
+              <Functionality />
+            </Layout.Section>
+          </Layout>
+        </Page>
+      </Frame>
+    </AppProvider>
   );
-}
+};
 
 export default App;
